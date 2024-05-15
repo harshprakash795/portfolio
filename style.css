@@ -1,0 +1,134 @@
+*{
+    --bg: #ffffff;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One";
+    font-weight: 400;
+    font-style: normal;
+}
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.hamburger{
+    display: none;
+}
+button{
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 20px 11px 20px;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    box-shadow: 0px 15px 24px 3px rgba(251, 161, 40, 0.42);
+}
+@media screen and (max-width: 827px) {
+    .hamburger{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .links{
+        display: none;
+    }
+}
+.hero-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.hero-image img{
+    width: 550px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 0px 0px 30px;
+}
+
+
+
+.introicons {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+.introicons li {
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.introicons li:hover{
+    z-index: 10000;
+    transform: scale(0.75);
+}
+.introicons li::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}  
+.introicons li::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+}
+ .introicons li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 3.2em;
+    transition: 0.5s;
+}
+.introicons li:hover a {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) ;
+}
+@media screen and (max-width:1243px) {
+    .hero-section{
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero-image img{
+        width: 400px;
+    }
+    
+}  
