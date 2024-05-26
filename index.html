@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio | Harsh Prakash </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,14 +22,14 @@
                 </div>
                 <div class="links">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">My Skills</a></li>
-                        <li><a href="">My projects</a></li>
+                        <li><a class="links-after" href="">Home</a></li>
+                        <li><a class="links-after" href="">About Me</a></li>
+                        <li><a class="links-after" href="">My Skills</a></li>
+                        <li><a class="links-after" href="">My projects</a></li>
                     </ul>
                     <div class="button">
                         <button>Contact Me</button>
-                    </div>   
+                    </div>
                 </div>
                 <div class="hamburger">
                     <i class="ri-apps-line"></i>
@@ -36,16 +41,27 @@
     <main>
         <div class="hero-section">
             <div class="hero-text">
-                <div class="name-text">
-                    <h1>Hy! My Name is <br> Harsh Prakash <br> and I'm a Web Developer </h1>
+                <div class="name-text introname">
+                    <span class="ispan1">Hy! my name is</span>
+                    <span class="ispan2">Harsh Prakash</span>
+                    <span class="ispan4">And I'm a <span class="ispan5">Web Developer</span></span>
                 </div>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed(".ispan5", {
+                        strings: ["Web Developer", "UI Designer", "Student"],
+                        typeSpeed: 50,
+                        backSpeed: 50,
+                        loop: true
+                    })
+                </script>
                 <div class="button">
                     <button>Hire Me</button>
                 </div>
                 <div class="ions">
                     <ul class="introicons">
-                        <li class="i1" style="--clr:#1877f2;">
-                            <a href="https://www.facebook.com/harsh.prakash.1238?mibextid=ZbWKwL" target="_blank"><i class="ri-facebook-fill"></i></a>
+                        <li class="i1" style="--clr:#000;">
+                            <a href="https://www.facebook.com/harsh.prakash.1238?mibextid=ZbWKwL" target="_blank"><i class="ri-github-fill"></i></a>
                         </li>
                         <li class="i2" style="--clr:#0A66C2;">
                             <a href="https://www.linkedin.com/in/harsh-prakash-61a2b1226/" target="_blank"><i class="ri-linkedin-fill"></i></a>
@@ -60,9 +76,216 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="/assets/images/coding.png" alt="">
+                <img class="heroimg" src="/assets/images/hero img 3.png" alt="">
+                <div class="codeicon">
+                    <img src="./assets/images/code.png" alt="">
+                </div>
+                <div class="floating1 float1">
+                    <img class="img2" src="./assets/images/coding icon.png" alt="">
+                    <span> Web <br> Developer</span>
+                </div>
+                <div class="floating1 float2">
+                    <img class="img3" src="./assets/images/ui.png" alt="">
+                    <span>UI/UX Designer</span>
+                </div>
+                <div class="blur blur0" style="background: rgb(238, 210, 255);"></div>
+                <!-- <div class="blur2 blur"></div> -->
+            </div>
+        </div>
+        <div class="about-section">
+            <h1 class="aboutheading heading2 ">About Me</h1>
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="/assets/images/coding.png" alt="">
+                </div>
+                <div class="about-text">
+                    <div class="education">
+                        <i class="ri-graduation-cap-fill"></i>
+                        <p>- B.C.A Graduated</p>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-code-box-fill"></i>
+                        <p>- Knowledge of Programming languages - C, C++, Java, HTML, TailwindCSS, Bootstrap,
+                            Javascript. </p>
+                    </div>
+                    <div class="skill">
+                        <i class="ri-snowflake-fill"></i>
+                        <p>- Graphic Designer</p>
+                    </div>
+                    <div class="button about-button">
+                        <button>Download Cv</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myskills heading heading2">My <span>Skills</span></div>
+        <section class="skills0" id="myskills1">
+            <div class="skills">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="tbar">
+                    <div class="bar"><i style="color: #c95d2e;" class="ri-html5-fill"></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progressline html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #147bbc;" class="ri-tailwind-css-fill"></i>
+                        <div class="info">
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="progressline css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #b0bc1e;" class="ri-javascript-fill"></i>
+                        <div class="info">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="progressline javascript">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color:rgb(255, 102, 102);" class="ri-java-fill"></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progressline java">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: blue;" class="ri-snowflake-fill"></i>
+                        <div class="info">
+                            <span>Graphic Designing</span>
+                        </div>
+                        <div class="progressline graphicdesign ">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar"><i style="color: #4a17c3;" class="ri-video-chat-fill"></i>
+                        <div class="info">
+                            <span>Video Editing</span>
+                        </div>
+                        <div class="progressline videoediting">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="professionalskills">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radialbars">
+
+                    <div class="radialbar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="path path1" cx="100" cy="100" r="80"></circle>
+                            <circle class="fillbar bar1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radialbar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="path path1" cx="100" cy="100" r="80"></circle>
+                            <circle class="fillbar bar2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">65%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radialbar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="path path1" cx="100" cy="100" r="80"></circle>
+                            <circle class="fillbar bar3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radialbar">
+                        <svg x="0px" viewBox="0 0 200 200">
+                            <circle class="path path1" cx="100" cy="100" r="80"></circle>
+                            <circle class="fillbar bar4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">TeamWork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="myprojects" class="portfolio ">
+            <div class="maintext">
+                <div class="heading project heading2">My <span>Projects</span></div>
+                <div class="portfoliocontent">
+                    <div class="row p3">
+                        <img src="/assets/images/icc.jpg" alt="">
+                        <div class="layers">
+                            <h5>ICC</h5>
+                            <a href="https://inclusivecookingcrew.com.au/" target="_blank"><i
+                                    class="ri-links-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="row p4">
+                        <img src="/assets/images/notes.png" alt="">
+                        <div class="layers">
+                            <h5>Notefy</h5>
+                            <a href="https://harshprakashfood.netlify.app/" target="_blank"><i
+                                    class="ri-links-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="row p1">
+                        <img src="/assets/images/travel.jpg" alt="">
+                        <div class="layers">
+                            <h5>Travel Website</h5>
+                            <a href="https://harshprakash1.netlify.app/" target="_blank"><i
+                                    class="ri-links-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="row p2">
+                        <img src="/assets/images/food.jpg" alt="">
+                        <div class="layers">
+                            <h5>Food Website</h5>
+                            <a href="https://harshprakashfood.netlify.app/" target="_blank"><i
+                                    class="ri-links-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="heading contactme heading2 " id="contactme">Contact <span>Me</span>
+            <div class="cm">
+                <div class="cmleft">
+                    <img class="imgcm" src="./assets/images/contact.png" alt="">
+                </div>
+                <div class="cmright">
+                    <form action="">
+                        <input type="" placeholder="Name" class="user">
+                        <input type="email" class="user" placeholder="Email" required>
+                        <textarea name="" id="" cols="40" rows="5" class="user" placeholder=" Message"></textarea>
+                        <div class="button">
+                            <button class="button">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer">
+            <img src="./assets/images/Bg-footer-content(2).png" alt="">
+            <div class="fcontent">
+                <span><i class="ri-mail-send-fill"></i> harshprakash78@gmail.com</span>
+                <div class="ficons">
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                    <i class="ri-github-fill"></i>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
